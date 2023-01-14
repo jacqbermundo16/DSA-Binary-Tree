@@ -138,6 +138,15 @@ if __name__ == '__main__':
     # print the maximum element
     print("Sum: ", numbers_tree.calculate_sum())
 
+    # print in-order traversal
+    print("In order traversal: ", numbers_tree.in_order_traversal())
+
+    # print post-order traversal
+    print("Post order traversal: ", numbers_tree.post_order_traversal())
+
+
+
+
 
 
 
