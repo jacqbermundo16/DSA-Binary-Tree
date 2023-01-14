@@ -55,6 +55,16 @@ class BinarySearchTreeNode:
 
         return elements
 
+    # implement pre-order traversal method
+    def pre_order_traversal(self):
+        elements = [self.data]
+        if self.left:
+            elements += self.left.pre_order_traversal()
+        if self.right:
+            elements += self.right.pre_order_traversal()
+
+        return elements
+
     # implement a search method
     def search(self, val):
         if self.data == val:
