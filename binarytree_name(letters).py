@@ -148,6 +148,7 @@ if __name__ == '__main__':
     #letters_tree.delete()
 
     print("In order traversal: ", letters_tree.in_order_traversal())
+    print("Min: ", letters_tree.find_min())
     print("Max: ", letters_tree.find_max())
 
 
