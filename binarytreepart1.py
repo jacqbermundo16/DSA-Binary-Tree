@@ -68,6 +68,13 @@ class BinarySearchTreeNode:
             return self.data
         return self.left.find_min()
 
+    # find the maximum element of the binary
+    def find_max(self):
+        if self.right is None:
+            return self.data
+        return self.right.find_max()
+
+
 
 # write a helper method
 def build_tree(elements):
