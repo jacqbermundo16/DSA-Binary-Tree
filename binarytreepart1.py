@@ -79,4 +79,6 @@ if __name__ == '__main__':
     numbers = [17, 4, 1, 20, 9, 23, 18, 34, 18, 4] # added 18 and 4 to check if it will duplicate in the tree
     numbers_tree = build_tree(numbers)
     # printing the tree in an in-order traversal method
-    print(numbers_tree.in_order_traversal())
+    # print(numbers_tree.in_order_traversal())
+    # check if the search is working
+    print(numbers_tree.search)
