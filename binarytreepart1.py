@@ -51,14 +51,14 @@ class BinarySearchTreeNode:
         if val < self.data:
             # val might be in left subtree
             if self.left:
-                self.left.search(val)
+                return self.left.search(val)
             else:
                 return False
 
         if val > self.data:
             # val might be in right subtree
             if self.right:
-                self.right.search(val)
+                return self.right.search(val)
             else:
                 return False
 
@@ -81,4 +81,4 @@ if __name__ == '__main__':
     # printing the tree in an in-order traversal method
     # print(numbers_tree.in_order_traversal())
     # check if the search is working
-    print(numbers_tree.search)
+    print(numbers_tree.search(200))
