@@ -62,6 +62,12 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+    # find the minimum element of the binary tree
+    def find_min(self):
+        if self.left is None:
+            return self.data
+        return self.left.right.find_min()
+
 
 # write a helper method
 def build_tree(elements):
@@ -84,7 +90,7 @@ def build_tree(elements):
     print(numbers_tree.search(200))
 
 # building tree that contains string
-if __name__ == '__main__':
+#if __name__ == '__main__':
     countries = ["India", "Pakistan", "Germany", "USA", "China", "India", "UK", "USA"] 
     country_tree = build_tree(countries)
 
@@ -92,5 +98,10 @@ if __name__ == '__main__':
     print("Sweden is in the list? ", country_tree.search("Sweden"))
 
     print(country_tree.in_order_traversal())
+
+if __name__ == '__main__':
+    numbers = [17, 4, 1, 20, 9, 23, 18, 34] 
+    numbers_tree = build_tree(numbers)
+
 
 
