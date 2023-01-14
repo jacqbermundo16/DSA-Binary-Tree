@@ -169,7 +169,7 @@ if __name__ == '__main__':
     print("Min: ", numbers_tree.find_min())
 
     # print the maximum element
-    print("Min: ", numbers_tree.find_max())
+    print("Max: ", numbers_tree.find_max())
 
     # print the maximum element
     print("Sum: ", numbers_tree.calculate_sum())
