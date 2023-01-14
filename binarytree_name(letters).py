@@ -145,11 +145,11 @@ def build_tree(elements):
 if __name__ == '__main__':
     letters = ["J", "A", "C", "Q", "U", "E", "L", "I", "N", "E", "B", "E", "R", "M", "U", "N", "D", "O"] 
     letters_tree = build_tree(letters)
-    letters_tree.delete("Q")
+    letters_tree.delete("U")
 
     print("Min: ", letters_tree.find_min())
     print("Max: ", letters_tree.find_max())
     print("In order traversal: ", letters_tree.in_order_traversal())
     print("Post order traversal: ", letters_tree.post_order_traversal())
     print("Pre order traversal: ", letters_tree.pre_order_traversal())
-    print("After deleting Q: ", letters_tree.in_order_traversal())
+    print("After deleting U: ", letters_tree.in_order_traversal())
