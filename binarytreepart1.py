@@ -42,6 +42,18 @@ class BinarySearchTreeNode:
             elements +=self.right.in_order_traversal()
 
         return elements
+    
+    # implement post-order traversal method
+    def post_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.post_order_traversal()
+        if self.right:
+            elements += self.right.post_order_traversal()
+
+        elements.append(self.data)
+
+        return elements
 
     # implement a search method
     def search(self, val):
@@ -122,6 +134,10 @@ if __name__ == '__main__':
 
     # print the maximum element
     print("Min: ", numbers_tree.find_max())
+
+    # print the maximum element
+    print("Sum: ", numbers_tree.calculate_sum())
+
 
 
 
