@@ -153,6 +153,10 @@ if __name__ == '__main__':
 
     # print post-order traversal
     print("Post order traversal: ", numbers_tree.post_order_traversal())
+    
+    # print pre-order traversal
+    print("Pre order traversal: ", numbers_tree.pre_order_traversal())
+
 
 
 
