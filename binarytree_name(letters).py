@@ -142,54 +142,10 @@ def build_tree(elements):
 
     return root
 
-# if __name__ == '__main__':
-    numbers = [17, 4, 1, 20, 9, 23, 18, 34, 18, 4] # added 18 and 4 to check if it will duplicate in the tree
-    numbers_tree = build_tree(numbers)
-    # printing the tree in an in-order traversal method
-    # print(numbers_tree.in_order_traversal())
-    # check if the search is working
-    print(numbers_tree.search(200))
-
-# building tree that contains string
-#if __name__ == '__main__':
-    countries = ["India", "Pakistan", "Germany", "USA", "China", "India", "UK", "USA"] 
-    country_tree = build_tree(countries)
-
-    print("UK is in the list? ", country_tree.search("UK"))
-    print("Sweden is in the list? ", country_tree.search("Sweden"))
-
-    print(country_tree.in_order_traversal())
-
 if __name__ == '__main__':
-    numbers = [17, 4, 1, 20, 9, 23, 18, 34] 
-    numbers_tree = build_tree(numbers)
-    numbers_tree.delete(9)
+    letters = ["J", "A", "C", "Q", "U", "E", "L", "I", "N", "E", "B", "E", "R", "M", "U", "N", "D", "O"] 
+    letters_tree = build_tree(letters)
+    #letters_tree.delete()
 
-    # print the minimum element
-    print("Min: ", numbers_tree.find_min())
-
-    # print the maximum element
-    print("Min: ", numbers_tree.find_max())
-
-    # print the maximum element
-    print("Sum: ", numbers_tree.calculate_sum())
-
-    # print in-order traversal
-    print("In order traversal: ", numbers_tree.in_order_traversal())
-
-    # print post-order traversal
-    print("Post order traversal: ", numbers_tree.post_order_traversal())
-    
-    # print pre-order traversal
-    print("Pre order traversal: ", numbers_tree.pre_order_traversal())
-
-    # print the elements after selecting a node to delete
-    print("After deleting 9: ", numbers_tree.in_order_traversal())
-
-
-
-
-
-
-
+    print("In order traversal: ", letters_tree.in_order_traversal())
 
