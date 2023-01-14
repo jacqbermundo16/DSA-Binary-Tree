@@ -40,5 +40,21 @@ class BinarySearchTreeNode:
         # visit right tree
         if self.right:
             elements +=self.right.in_order_traversal()
-            
+
         return elements
+
+# write a helper method
+def build_tree(elements):
+    # set the first element as the root node
+    root = BinarySearchTreeNode(elements[0])
+
+    # run a full loop on elements
+    for i in range(1, len(elements)):
+        # build a tree
+        root.add_child(elements[i])
+
+    return root
+
+if __name__ == '__main__':
+    numbers = [17, 4, 1, 20, 9, 23, 18, 34]
+    numbers_tree = build_tree(numbers)
