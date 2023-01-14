@@ -163,6 +163,7 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = [17, 4, 1, 20, 9, 23, 18, 34] 
     numbers_tree = build_tree(numbers)
+    numbers_tree.delete(20)
 
     # print the minimum element
     print("Min: ", numbers_tree.find_min())
@@ -181,6 +182,9 @@ if __name__ == '__main__':
     
     # print pre-order traversal
     print("Pre order traversal: ", numbers_tree.pre_order_traversal())
+
+    # print the elements after selecting a node to delete
+    print("After deleting 20: ", numbers_tree.in_order_traversal())
 
 
 
